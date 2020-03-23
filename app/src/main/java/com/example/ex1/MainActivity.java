@@ -9,20 +9,20 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button b,b2;
+    int x;
     TextView t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         b=findViewById(R.id.btn);
-        b=findViewById(R.id.btn2);
+        b2=findViewById(R.id.btn2);
         t=findViewById(R.id.t);
     }
-    int x;
+
     public void co(View view) {
         x=(int) (Math.random()*100+0);
         t.setText("number="+x);
-
     }
 
     public void yo(View view) {      //cancle
