@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         t=findViewById(R.id.t);
     }
     int x;
-    public void co(View view) { //click for number
+    public void co(View view) {
         x=(int) (Math.random()*100+0);
         t.setText("number="+x);
 
